@@ -1,5 +1,17 @@
 
 @import '_base.scss';
+@import '_normalize.scss';
+
 body {
 	background: $color;
+}
+
+.container{
+	width: $container-width;
+	background: $grey;
+
+	.tip-calculator{
+		width: $tip-calculator-width;
+		background: $white;
+	}
 }
