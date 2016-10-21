@@ -39,6 +39,14 @@ module.exports = function(grunt) {
 		}, // end js minify
 
 		watch: {
+			html: {
+		        files: 'index.html',
+		        tasks: ['htmlmin'],
+		    },
+			js: {
+		        files: 'scripts/main.js',
+		        tasks: ['uglify'],
+		    },
 			css: {
 				files: '**/*.scss',
 				tasks: ['sass']

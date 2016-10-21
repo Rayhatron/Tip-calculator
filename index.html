@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Tip calculator</title>
 	<link rel="stylesheet" href="css/master.css">
+	<script src="js/main.min.js"></script>
 </head>
 <body>
 	<div class="container">
@@ -13,27 +14,27 @@
 				<hr>
 			</header>
 
-			<form>
+			<form onsubmit="calculateTip()">
 
 				<p>How much was your bill?</p>
 				<label for="bill">$</label>
-				<input type="number" name="bill">
+				<input type="number" name="bill" id="billInput" required>
 
 				<p>How was your service?</p>
-				<select name="serviceRating" id="serviceRating">
-					<option value="options"></option>
-					<option value="Outstanding">Outstanding</option>
-					<option value="good">Good</option>
-					<option value="okay">It was okay</option>
-					<option value="bad">Bad</option>
-					<option value="terrible">Terrible</option>
+				<select name="serviceRating" id="serviceRating" required>
+					<option value="">Please select</option>
+					<option value="30%">Outstanding</option>
+					<option value="20%">Good</option>
+					<option value="15%">It was okay</option>
+					<option value="10%">Bad</option>
+					<option value="5%">Terrible</option>
 				</select>
 
 				<p>How many people are sharing the bill?</p>
-				<input type="number" name="people"> 
+				<input type="number" name="people" id="peopleInput"> 
 				<label for="people">people</label>
 				
-				<button id="calculate" onclick="">Calculate</button>
+				<input type="submit" id="calculate" value="Calculate">
 
 			</form>
 
