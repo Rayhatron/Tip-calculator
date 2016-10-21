@@ -2,16 +2,29 @@
 @import '_base.scss';
 @import '_normalize.scss';
 
-body {
-	background: $color;
-}
-
 .container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
 	width: $container-width;
+	height: $container-height;
 	background: $grey;
 
 	.tip-calculator{
 		width: $tip-calculator-width;
+		height: $tip-calculator-height;
 		background: $white;
+		padding: 25px;
+		h1{
+			width: $full-width;
+			text-align: center;
+			padding: 10px 0;
+			
+		}
+
+		hr{
+				width: 80%;
+		}
 	}
 }

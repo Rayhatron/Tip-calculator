@@ -6,6 +6,38 @@
 	<link rel="stylesheet" href="css/master.css">
 </head>
 <body>
-	
+	<div class="container">
+		<div class="tip-calculator">
+			<header>
+				<h1>Tip calculator</h1>
+				<hr>
+			</header>
+
+			<form>
+
+				<p>How much was your bill?</p>
+				<label for="bill">$</label>
+				<input type="number" name="bill">
+
+				<p>How was your service?</p>
+				<select name="serviceRating" id="serviceRating">
+					<option value="options"></option>
+					<option value="Outstanding">Outstanding</option>
+					<option value="good">Good</option>
+					<option value="okay">It was okay</option>
+					<option value="bad">Bad</option>
+					<option value="terrible">Terrible</option>
+				</select>
+
+				<p>How many people are sharing the bill?</p>
+				<input type="number" name="people"> 
+				<label for="people">people</label>
+				
+				<button id="calculate" onclick="">Calculate</button>
+
+			</form>
+
+		</div>
+	</div>
 </body>
 </html>
