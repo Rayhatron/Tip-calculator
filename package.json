@@ -1,0 +1,25 @@
+{
+  "name": "tip-calculator",
+  "version": "1.0.0",
+  "description": "tip calculator in html, scss, css and js",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0"
+  },
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Rayhatron/Tip-calculator.git"
+  },
+  "author": "Rufaro Madamombe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Rayhatron/Tip-calculator/issues"
+  },
+  "homepage": "https://github.com/Rayhatron/Tip-calculator#readme"
+}
