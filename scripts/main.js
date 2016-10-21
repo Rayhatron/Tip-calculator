@@ -28,5 +28,6 @@ function calculateTip(){
 	}
 
 	document.getElementById("amount").innerHTML = "$" + tipAmount;
+	document.getElementById("result").style = "visibility: visible;";
 	return false;
 }

@@ -14,7 +14,7 @@
 				<hr>
 			</header>
 
-			<form onsubmit="return calculateTip()">
+			<form onsubmit="return calculateTip()" method="POST">
 
 				<p>How much was your bill?</p>
 				<label for="bill">$</label>
@@ -34,12 +34,12 @@
 				<input type="number" name="people" id="peopleInput"> 
 				<label for="people">people</label>
 				
-				<input type="submit" id="calculate" value="Calculate">
+				<input type="submit" id="submit" value="Calculate">
 
 			</form>
 			
 			<section id="result">
-				<h2>Tip Amount</h2>
+				<h4>Tip Amount</h4>
 				<div id="amount">
 					
 				</div>
