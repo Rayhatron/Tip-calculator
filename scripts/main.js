@@ -1,25 +1,32 @@
-
+var tipAmount;
 var billAmount;
-var services;
+var tipPercentage;
 var peopleSharing;
+var outputMessage;
 
-//Get data from form
+//Get and set data from form
 function getData(){
 	billAmount =  document.getElementById("billInput").value;
-	services =  document.getElementById("serviceRating").value;
+	tipPercentage =  document.getElementById("serviceRating").value;
 	peopleSharing =  document.getElementById("peopleInput").value;
 
 	if(peopleSharing == ""){
 		peopleSharing = 1;
 	}
-
-	return true;
-	alert("Bill: " + billAmount + "Service: " + services + "People: " + peopleSharing );
 }
 
-
+//Calculate tip and share if there is more than 1 person
 function calculateTip(){
 	getData();
 	
+	tipAmount = (tipPercentage/100) * billAmount;
 
+	if(peopleSharing > 1){
+		tipAmount /= peopleSharing;
+		document.getElementById("amount").innerHTML = "$" + tipAmount + " each";
+		return false;
+	}
+
+	document.getElementById("amount").innerHTML = "$" + tipAmount;
+	return false;
 }

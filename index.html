@@ -14,7 +14,7 @@
 				<hr>
 			</header>
 
-			<form onsubmit="calculateTip()">
+			<form onsubmit="return calculateTip()">
 
 				<p>How much was your bill?</p>
 				<label for="bill">$</label>
@@ -23,11 +23,11 @@
 				<p>How was your service?</p>
 				<select name="serviceRating" id="serviceRating" required>
 					<option value="">Please select</option>
-					<option value="30%">Outstanding</option>
-					<option value="20%">Good</option>
-					<option value="15%">It was okay</option>
-					<option value="10%">Bad</option>
-					<option value="5%">Terrible</option>
+					<option value="30">Outstanding</option>
+					<option value="20">Good</option>
+					<option value="15">It was okay</option>
+					<option value="10">Bad</option>
+					<option value="5">Terrible</option>
 				</select>
 
 				<p>How many people are sharing the bill?</p>
@@ -37,7 +37,13 @@
 				<input type="submit" id="calculate" value="Calculate">
 
 			</form>
-
+			
+			<section id="result">
+				<h2>Tip Amount</h2>
+				<div id="amount">
+					
+				</div>
+			</section>
 		</div>
 	</div>
 </body>
