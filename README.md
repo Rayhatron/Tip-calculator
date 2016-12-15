@@ -1,1 +1,3 @@
-Tip calculator made in html, javascript and sass compiled to css in development version.
+A calculator for those times when you just can't figure out how big of a tip to give.
+
+Technologies used: html 5, css 3, sass, javascript and grunt.
